@@ -3,28 +3,38 @@ var generateBtn = document.querySelector("#generate");
 var lettersArray = "ABCDEFGHIJKLMNOPQRSTUVWXYZ".split(""); 
 var passwordText = document.querySelector("#password");
 
-// Write password to the #password input
+
 function writePassword() {
 
-  var userNumberChoice = window.prompt("Enter the number of characters in your password (only 8 - 128 characters):");
+  var userNumberChoice = window.prompt("Enter the number of characters in your password (only 8 - 128 characters allowed):");
 
   // If user pressed Cancel, immediately end function
   if (!userNumberChoice) {
     return;
   }
 
-  
+  console.log(userNumberChoice);
+
+  if (userNumberChoice < 8) {
+    window.alert("Please enter an appropriate response");
+    return;
+  }
+
+  if (userNumberChoice > 128) {
+    window.alert("Please enter an appropriate response");
+    return;
+  }
 
   // Function returns a string of concatenated characters of length num
   function passwordGenerator(userNumberChoice) {
   var password = '';
-  for (var i = 0; i < num; i++) {
+  for (var i = 0; i < userNumberChoice; i++) {
     password += getPasswordCharacter();
   }
   return password;
 }
 
-  var newPassword = passwordGenerator(15);
+  var newPassword = passwordGenerator(userNumberChoice);
   console.log(newPassword)
   // passwordText.text(newPassword);
 
