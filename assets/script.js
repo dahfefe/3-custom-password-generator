@@ -25,6 +25,30 @@ function writePassword() {
     return;
   }
 
+  var specialCharChoice = window.prompt("Click OK to confirm including special characters.");
+  
+  if (!specialCharChoice) {
+    
+  }
+
+  var includeNumericChar = window.prompt("Click OK to confirm including numeric characters.");
+  
+  if (!includeNumericChar) {
+    
+  }
+
+  var includeLowerCase = window.prompt("Click OK to confirm including lowercase characters.");
+  
+  if (!includeLowerCase) {
+    
+  }
+
+  var includeUpperCase = window.prompt("Click OK to confirm including uppercase characters.");
+  
+  if (!includeUpperCase) {
+    
+  }
+
   // Function returns a string of concatenated characters of length num
   function passwordGenerator(userNumberChoice) {
   var password = '';
