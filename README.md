@@ -8,7 +8,7 @@ I created this project for a personal challenge as well as a way to help to furt
 
 GitHub repo link: https://github.com/dahfefe/3-custom-password-generator
 
-Deployed Application: https://dahfefe.github.io/5-daily-planner/
+Deployed Application: https://dahfefe.github.io/3-custom-password-generator/
 
 ## Usage
 
